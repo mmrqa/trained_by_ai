@@ -18,25 +18,27 @@ import Register from "../components/Register.vue";
     </div>
     <Register v-if="mode === 'register'" />
     <Login v-else />
-
   </div>
+
 </template>
 <script>
-export default { 
-  data() { 
-    return { 
+export default {
+  data() {
+    return {
       mode: 'register',
-      regtext: "Sign-Up to check out your individual workout plan created by AI." }
-  }, 
-  methods:{
-    register(){
+      regtext: "Sign-Up to check out your individual workout plan created by AI."
+    }
+  },
+  methods: {
+    register() {
       this.mode = 'register';
       this.regtext = "Sign-Up to check out your individual workout plan created by AI."
     },
-    login(){
+    login() {
       this.mode = 'login';
       this.regtext = "Good to have you back. Just type your mail and use the authentification from your operating system."
     }
   }
 }
 </script>
+
