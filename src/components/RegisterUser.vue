@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     async register() {
-      var p = new Passwordless.Client({
+      let p = new Passwordless.Client({
         apiKey: "mmrqa:public:0b1456c994ef46079ab72c1ed5c1a08b",
       });
 

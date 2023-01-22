@@ -29,14 +29,14 @@ export default {
   },
   methods: {
     async login() {
-      var p = new Passwordless.Client({
+      let p = new Passwordless.Client({
         apiKey: "mmrqa:public:0b1456c994ef46079ab72c1ed5c1a08b",
       });
 
-      var alias = this.useremail;
+      let alias = this.useremail;
 
       // yUf6_wWdDh02ItIvnCKT_02ItIvn...
-      var token = await p.signinWithAlias(alias);
+      let token = await p.signinWithAlias(alias);
 
       const param = { SignInToken: token };
       const signInUserResult = await Parse.Cloud.run("signinUser", param);
