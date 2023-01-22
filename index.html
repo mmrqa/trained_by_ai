@@ -9,5 +9,12 @@
   <body>
     <div id="app" class="h-100"></div>
     <script type="module" src="/src/main.js"></script>
+    <script src="https://cdn.passwordless.dev/dist/0.3.0/passwordless.iife.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script>
+      // Initialize Parse
+      Parse.initialize("Q6JgKPj0a1YOiB5ZtDwogIWdMTQR6az0P4M3a3nV", "bwl7Pq6ckDaWzFea8gaRIIuqHIZj7fccrBDhmWgg"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+      Parse.serverURL = "https://parseapi.back4app.com/";
+    </script>
   </body>
 </html>
